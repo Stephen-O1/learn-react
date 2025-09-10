@@ -14,11 +14,11 @@ const  Card = ({ title}) => {
 
   useEffect(() => {
     console.log("Card Rendered")
-  }), [];
+  }, []);
 
   return (
     <div className='card' onClick={() => setCount(() => count + 1)}>
-      <h2>{title}  {count}</h2>
+      <h2>{title} <br /> {count}</h2>
       <button onClick={() => setHasLiked(!hasLiked)}>
         {hasLiked ? "Liked" : "Like"}
       </button>

@@ -3,40 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-const  Card = ({ title}) => {
-  const [count, setCount] = useState(0);
-
-  const [hasLiked, setHasLiked] = useState(false);
-
-  useEffect(() =>{
-    console.log(`${title} has been liked: ${hasLiked}`);
-  }, [hasLiked]);
-
-  useEffect(() => {
-    console.log("Card Rendered")
-  }, []);
-
-  return (
-    <div className='card' onClick={() => setCount(() => count + 1)}>
-      <h2>{title} <br /> {count}</h2>
-      <button onClick={() => setHasLiked(!hasLiked)}>
-        {hasLiked ? "Liked" : "Like"}
-      </button>
-    </div>
-  )
-}
 const App = () => {
   
-  return (   
-    <div>
-      <h2>Cuddles and Vybz</h2>
-      <div className='card-container'>
-        <Card title="Jeepers Crepers" />
-        <Card title="Kingfu Panda"/>
-        <Card title="Neighbor Next Door" />
+  return (
+    <main> 
+      <div  className="pattern">
+        <div className="wrapper">
+          <header>
+            <h1><span className='text-gradient'>Movies Hub:</span> Chills and Flix</h1>
+          </header>
+        </div>
       </div>
-      
-    </div>
+    </main>
   )
 }
 

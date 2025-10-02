@@ -12,6 +12,7 @@ const App = () => {
           <header>
             <h1><span className='text-gradient'>Movies Hub:</span> Chills and Flix</h1>
           </header>
+          <p>Search</p>
         </div>
       </div>
     </main>
